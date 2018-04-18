@@ -2,7 +2,6 @@ package main
 
 import (
 	log "github.com/Sirupsen/logrus"
-	core_v1 "k8s.io/api/core/v1"
 )
 
 // Handler interface contains the methods that are required
@@ -25,11 +24,6 @@ func (t *TestHandler) Init() error {
 // ObjectCreated is called when an object is created
 func (t *TestHandler) ObjectCreated(obj interface{}) {
 	log.Info("TestHandler.ObjectCreated")
-	// assert the type to a Pod object to pull out relevant data
-	pod := obj.(*core_v1.Pod)
-	log.Infof("    ResourceVersion: %s", pod.ObjectMeta.ResourceVersion)
-	log.Infof("    NodeName: %s", pod.Spec.NodeName)
-	log.Infof("    Phase: %s", pod.Status.Phase)
 }
 
 // ObjectDeleted is called when an object is deleted
