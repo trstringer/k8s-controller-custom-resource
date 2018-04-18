@@ -19,7 +19,7 @@ limitations under the License.
 package v1
 
 import (
-	v1 "github.com/trstringer/k8s-controller-core-resource/pkg/apis/myresource/v1"
+	v1 "github.com/trstringer/k8s-controller-custom-resource/pkg/apis/myresource/v1"
 	"k8s.io/apimachinery/pkg/api/errors"
 	"k8s.io/apimachinery/pkg/labels"
 	"k8s.io/client-go/tools/cache"

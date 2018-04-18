@@ -23,9 +23,9 @@ import (
 	sync "sync"
 	time "time"
 
-	versioned "github.com/trstringer/k8s-controller-core-resource/pkg/client/clientset/versioned"
-	internalinterfaces "github.com/trstringer/k8s-controller-core-resource/pkg/client/informers/externalversions/internalinterfaces"
-	myresource "github.com/trstringer/k8s-controller-core-resource/pkg/client/informers/externalversions/myresource"
+	versioned "github.com/trstringer/k8s-controller-custom-resource/pkg/client/clientset/versioned"
+	internalinterfaces "github.com/trstringer/k8s-controller-custom-resource/pkg/client/informers/externalversions/internalinterfaces"
+	myresource "github.com/trstringer/k8s-controller-custom-resource/pkg/client/informers/externalversions/myresource"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"

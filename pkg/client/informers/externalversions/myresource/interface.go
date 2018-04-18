@@ -19,8 +19,8 @@ limitations under the License.
 package trstringer
 
 import (
-	internalinterfaces "github.com/trstringer/k8s-controller-core-resource/pkg/client/informers/externalversions/internalinterfaces"
-	v1 "github.com/trstringer/k8s-controller-core-resource/pkg/client/informers/externalversions/myresource/v1"
+	internalinterfaces "github.com/trstringer/k8s-controller-custom-resource/pkg/client/informers/externalversions/internalinterfaces"
+	v1 "github.com/trstringer/k8s-controller-custom-resource/pkg/client/informers/externalversions/myresource/v1"
 )
 
 // Interface provides access to each of this group's versions.

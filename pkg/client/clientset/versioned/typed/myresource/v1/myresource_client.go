@@ -19,8 +19,8 @@ limitations under the License.
 package v1
 
 import (
-	v1 "github.com/trstringer/k8s-controller-core-resource/pkg/apis/myresource/v1"
-	"github.com/trstringer/k8s-controller-core-resource/pkg/client/clientset/versioned/scheme"
+	v1 "github.com/trstringer/k8s-controller-custom-resource/pkg/apis/myresource/v1"
+	"github.com/trstringer/k8s-controller-custom-resource/pkg/client/clientset/versioned/scheme"
 	serializer "k8s.io/apimachinery/pkg/runtime/serializer"
 	rest "k8s.io/client-go/rest"
 )

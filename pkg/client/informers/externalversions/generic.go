@@ -21,7 +21,7 @@ package externalversions
 import (
 	"fmt"
 
-	v1 "github.com/trstringer/k8s-controller-core-resource/pkg/apis/myresource/v1"
+	v1 "github.com/trstringer/k8s-controller-custom-resource/pkg/apis/myresource/v1"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"
 	cache "k8s.io/client-go/tools/cache"
 )

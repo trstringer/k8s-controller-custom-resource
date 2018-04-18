@@ -19,7 +19,7 @@ limitations under the License.
 package versioned
 
 import (
-	trstringerv1 "github.com/trstringer/k8s-controller-core-resource/pkg/client/clientset/versioned/typed/myresource/v1"
+	trstringerv1 "github.com/trstringer/k8s-controller-custom-resource/pkg/client/clientset/versioned/typed/myresource/v1"
 	discovery "k8s.io/client-go/discovery"
 	rest "k8s.io/client-go/rest"
 	flowcontrol "k8s.io/client-go/util/flowcontrol"

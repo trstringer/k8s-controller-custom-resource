@@ -6,10 +6,7 @@ import (
 	"syscall"
 
 	log "github.com/Sirupsen/logrus"
-	api_v1 "k8s.io/api/core/v1"
 	meta_v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"k8s.io/apimachinery/pkg/runtime"
-	"k8s.io/apimachinery/pkg/watch"
 	"k8s.io/client-go/kubernetes"
 	"k8s.io/client-go/tools/cache"
 	"k8s.io/client-go/tools/clientcmd"
@@ -20,7 +17,7 @@ import (
 )
 
 // retrieve the Kubernetes cluster client from outside of the cluster
-func getKubernetesClient() kubernetes.Interface myresourceclientset.Interface {
+func getKubernetesClient() (kubernetes.Interface, myresourceclientset.Interface) {
 	// construct the path to resolve to `~/.kube/config`
 	kubeConfigPath := os.Getenv("HOME") + "/.kube/config"
 

@@ -1,0 +1,7 @@
+apiVersion: trstringer.com/v1
+kind: MyResource
+metadata:
+  name: example-myresource
+spec:
+  message: hello world
+  someValue: 13
